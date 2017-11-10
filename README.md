@@ -1,5 +1,5 @@
 # jfImgToCSS
-jQuery plugin designed to reload img tag sources as css background images on their parents. This enables the handy css features such as full blead images using the cover property while maintaining the img as content with alt attributes etc. for search and ease of development. 
+jQuery plugin designed to reload img element's source images as CSS background images on their parent element. This enables handy css features such as full-bleed images using the cover property, while maintaining the img as content with its alt attribute, etc. for search and ease of development. 
 
 
 
