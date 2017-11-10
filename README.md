@@ -1,5 +1,5 @@
 # jfImageCover
-jQuery plugin designed to "swap" img tags with css background images on their parents. This enables handy features such as full blead images using the cover property while maintaining the img as content, with alt attributes, etc. for search and ease of development. 
+jQuery plugin designed to reload img tags as css background images on their parents. This enables the handy css features such as full blead images using the cover property while maintaining the img as content, with alt attributes, etc. for search and ease of development. 
 
 
 
@@ -65,7 +65,7 @@ Options can also be passed through data attributes in the opening of the attache
 ## Public functions
 There are a few public functions that can be called at any time after init.
 * __destroy():__ This deactivates the plugin.
-* __init():__ This initates the plugin, this gets called automatically. 
+* __init():__ This initiates the plugin, this gets called automatically. 
 
 ```js
 $(".imgCover").data("jfImageCover").destroy();
@@ -73,7 +73,7 @@ $(".imgCover").data("jfImageCover").init();
 ```
 
 ## Basic syntax
-* Make sure its parent element has some sort of width and/or height or it will collaps.
+* Make sure its parent element has some sort of width and/or height or it will collapse.
 
 ```html
 <div class="column">
