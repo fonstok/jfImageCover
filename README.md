@@ -26,7 +26,7 @@ Just follow these steps to enable:
 ## Options and Defaults
 __Options__ and *Defaults*
 ### The Options
-* __auto:__ *'false'* If you'd prefer to set your own background css properites via traditional methods set this to true.
+* __auto:__ *'true'* If you'd prefer to set your own background css properites via traditional methods set this to false.
 * __target:__ *The img element's parent* This can be changed to another element.
 * __bgRepeat:__ *'no-repeat'*
 * __bgSize:__ *'cover'*
