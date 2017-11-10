@@ -1,2 +1,92 @@
 # jfImageCover
-jQuery plugin that "swaps" img tags to css background image properties placed on their parent tag.  
+jQuery plugin designed to "swap" img tags with css background images on their parents. This enables handy features such as full blead images using the cover property while maintaining the img as content, with alt attributes, etc. for search and ease of development. 
+
+
+
+## Script Set Up
+Just follow these steps to enable:
+
+1. Include jQuery on your page.
+
+    ```html
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    ```
+
+2. Download and include jfImageCover after jQuery and before its first use.
+
+    ```html
+    <script src="jquery.jfImageCover.js"></script>
+    ```
+
+3. Init the plugin by attaching it the elements you want responsible for launching external files.
+    ```js
+    $(".imgCover").jfImageCover();
+    ```
+    
+## Options and Defaults
+__Options__ and *Defaults*
+#### Basics
+
+* __target:__ *The img element's parent* This can be changed to another element.
+* __bgRepeat:__ * 'no-repeat'*
+* __bgSize:__ * 'cover'*
+* __bgPosition:__ * 'center center'*
+* __bgOrigin:__ * 'padding-box'*
+* __bgClip:__ * 'border-box'*
+* __bgAttachment:__ * 'scroll'*
+* __bgColor:__ * 'transparent'*
+
+
+### Options as Arguments
+Options can be passed as arguments through the init function.
+```js
+$('.imgCover').jfImageCover({
+    bgRepeat: 'no-repeat',
+    bgSize: 'cover',
+    bgPosition: 'center center',
+    bgOrigin: 'padding-box',
+    bgClip: 'border-box',
+    bgAttachment: 'scroll',
+    bgColor: 'transparent',
+  });
+```
+	
+### Options as Data Attributes
+Options can also be passed through data attributes in the opening of the attached element. __Notice that the data attributes use dashes instead of camel case__.
+```html
+<img class="imgCover" 
+    data-bg-repeat="repeat" 
+    data-bg-size="100% auto" 
+    data-bg-position="center" 
+    alt="photo of a jungle" 
+    src="images/jungle.jpg">
+```
+
+## Public functions
+There are a few public functions that can be called at any time after init.
+* __destroy():__ This deactivates the plugin.
+* __init():__ This initates the plugin, this gets called automatically. 
+
+```js
+$(".imgCover").data("jfImageCover").destroy();
+$(".imgCover").data("jfImageCover").init();
+```
+
+## Basic syntax
+* Make sure its parent element has some sort of width and/or height or it will collaps.
+
+```html
+<div class="column">
+    <img class="imgCover" 
+    data-bg-repeat="repeat" 
+    data-bg-size="100% auto" 
+    data-bg-position="center" 
+    alt="photo of a jungle" 
+    src="images/jungle.jpg">
+</div>
+```
+
+## Credits
+I used http://stefangabos.ro/jquery/jquery-plugin-boilerplate-revisited/ as a starting point for the plugin.
+
+
