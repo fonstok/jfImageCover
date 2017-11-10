@@ -2,7 +2,7 @@
 jQuery plugin designed to reload img element's source images as CSS background images on their parent element. This enables handy css features such as full-bleed images using the cover property, while maintaining the img as content with its alt attribute, etc. for search and ease of development. 
 
 ## Demo
-<a href="https://codepen.io/fonstok/pen/WXpJxw">https://codepen.io/fonstok/pen/WXpJxw</a>
+<a target="_blank" href="https://codepen.io/fonstok/pen/WXpJxw">https://codepen.io/fonstok/pen/WXpJxw</a>
 
 
 
