@@ -6,6 +6,7 @@
         var imgpath = $element.attr('src');
 
         var defaults = {
+            auto: true,
             target: $element.parent(),
             bgRepeat: 'no-repeat',
             bgSize: 'cover',
@@ -23,15 +24,19 @@
 
             var $target = $(plugin.settings.target);
             $target.css({
-                'background-image': 'url('+imgpath+')',
-                'background-repeat': plugin.settings.bgRepeat,
-                'background-size': plugin.settings.bgSize,
-                'background-position': plugin.settings.bgPosition,
-                'background-origin': plugin.settings.bgPosition,
-                'background-clip': plugin.settings.bgClip,
-                'background-attachment': plugin.settings.bgAttachment,
-                'background-color': plugin.settings.bgColor,
-            });
+                    'background-image': 'url('+imgpath+')',
+                });
+            if (plugin.settings.auto){
+                $target.css({
+                    'background-repeat': plugin.settings.bgRepeat,
+                    'background-size': plugin.settings.bgSize,
+                    'background-position': plugin.settings.bgPosition,
+                    'background-origin': plugin.settings.bgPosition,
+                    'background-clip': plugin.settings.bgClip,
+                    'background-attachment': plugin.settings.bgAttachment,
+                    'background-color': plugin.settings.bgColor,
+                });
+            }
         };
 
         plugin.destroy = function() {

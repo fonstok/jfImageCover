@@ -37,13 +37,22 @@ section .c-zone {
 }
 
 .column {
-	background-color: #888;
+	background-color: #FFF;
 	border-radius: 20px;
-	padding:50px;
+	padding:10px;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0;
-	margin:0px 10px;
+	margin:0px 20px;
+}
+
+.column:nth-child(3){
+	/*The background properties only work if auto is set to off in the js*/
+	background-color: #fff;
+	background-size: 100%;
+	background-position:center;
+	background-repeat: no-repeat;
+	/*The background properties only work if auto is set to off in the js*/
 }
 
 @media only screen and (max-width: 959px) {

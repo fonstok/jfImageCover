@@ -20,13 +20,13 @@ Just follow these steps to enable:
 
 3. Init the plugin by attaching it the elements you want responsible for launching external files.
     ```js
-    $(".imgCover").jfImgToCSS();
+    $(".imgToCSS").jfImgToCSS();
     ```
     
 ## Options and Defaults
 __Options__ and *Defaults*
 #### Basics
-
+* auto:__ *'false'* If you'd prefer to set your own background css properites via traditional methods set this to true.
 * __target:__ *The img element's parent* This can be changed to another element.
 * __bgRepeat:__ * 'no-repeat'*
 * __bgSize:__ * 'cover'*
@@ -40,7 +40,8 @@ __Options__ and *Defaults*
 ### Options as Arguments
 Options can be passed as arguments through the init function.
 ```js
-$('.imgCover').jfImgToCSS({
+$('.imgToCSS').jfImgToCSS({
+    auto:'true',
     bgRepeat: 'no-repeat',
     bgSize: 'cover',
     bgPosition: 'center center',
@@ -54,7 +55,7 @@ $('.imgCover').jfImgToCSS({
 ### Options as Data Attributes
 Options can also be passed through data attributes in the opening of the attached element. __Notice that the data attributes use dashes instead of camel case__.
 ```html
-<img class="imgCover" 
+<img class="imgToCSS" 
     data-bg-repeat="repeat" 
     data-bg-size="100% auto" 
     data-bg-position="center" 
@@ -68,8 +69,8 @@ There are a few public functions that can be called at any time after init.
 * __init():__ This initiates the plugin, this gets called automatically. 
 
 ```js
-$(".imgCover").data("jfImgToCSS").destroy();
-$(".imgCover").data("jfImgToCSS").init();
+$(".imgToCSS").data("jfImgToCSS").destroy();
+$(".imgToCSS").data("jfImgToCSS").init();
 ```
 
 ## Basic syntax
@@ -77,7 +78,7 @@ $(".imgCover").data("jfImgToCSS").init();
 
 ```html
 <div class="column">
-    <img class="imgCover" 
+    <img class="imgToCSS" 
     data-bg-repeat="repeat" 
     data-bg-size="100% auto" 
     data-bg-position="center" 

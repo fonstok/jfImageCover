@@ -12,26 +12,30 @@
     <section>
         <div class="c-zone">
             <div class="column">
-                <img class="imgCover" src="images/bridge.jpg">
+                <img class="imgToCSS" src="images/bridge.jpg">
             </div>
             <div class="column">
-                <img class="imgCover" 
+                <img class="imgToCSS"  
+                alt="photo of a jungle" 
+                src="images/jungle.jpg"
                 data-bg-repeat="repeat" 
                 data-bg-size="100% auto" 
-                data-bg-position="center" 
-                alt="photo of a jungle" 
-                src="images/jungle.jpg">
+                data-bg-position="center">
             </div>
             <div class="column">
-                <p>.column</p>
+                <img class="imgToCSS"
+                alt="photo of a city"  
+                src="images/city.jpg"
+                data-auto='false'
+                >
             </div>
         </div>
     </section>
     <!-- ========= scripts ========== -->
     <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.jfImgToCSS-min.js"></script>
+    <script type="text/javascript" src="./../jquery.jfImgToCSS-min.js"></script>
     <script type="text/javascript">
-    $('.imgCover').jfImgToCSS({});
+    $('.imgToCSS').jfImgToCSS({});
     </script>
 </body>
 
