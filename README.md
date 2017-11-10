@@ -28,13 +28,13 @@ __Options__ and *Defaults*
 #### Basics
 * __auto:__ *'false'* If you'd prefer to set your own background css properites via traditional methods set this to true.
 * __target:__ *The img element's parent* This can be changed to another element.
-* __bgRepeat:__ * 'no-repeat'*
-* __bgSize:__ * 'cover'*
-* __bgPosition:__ * 'center center'*
-* __bgOrigin:__ * 'padding-box'*
-* __bgClip:__ * 'border-box'*
-* __bgAttachment:__ * 'scroll'*
-* __bgColor:__ * 'transparent'*
+* __bgRepeat:__ *'no-repeat'*
+* __bgSize:__ *'cover'*
+* __bgPosition:__ *'center center'*
+* __bgOrigin:__ *'padding-box'*
+* __bgClip:__ *'border-box'*
+* __bgAttachment:__ *'scroll'*
+* __bgColor:__ *'transparent'*
 
 
 ### Options as Arguments
