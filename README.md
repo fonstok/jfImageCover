@@ -74,6 +74,7 @@ $(".imgToCSS").data("jfImgToCSS").init();
 ```
 
 ## Basic syntax
+* Only works with img elements, so you need to target those.
 * Make sure its parent element has some sort of width and/or height or it will collapse.
 
 ```html
