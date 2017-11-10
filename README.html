@@ -6,7 +6,7 @@
 <body>
 <h1 id="jfimgtocss">jfImgToCSS</h1>
 
-<p>jQuery plugin designed to reload img tags as css background images on their parents. This enables the handy css features such as full blead images using the cover property while maintaining the img as content, with alt attributes, etc. for search and ease of development. </p>
+<p>jQuery plugin designed to reload img tag sources as css background images on their parents. This enables the handy css features such as full blead images using the cover property while maintaining the img as content with alt attributes etc. for search and ease of development. </p>
 
 <h2 id="scriptsetup">Script Set Up</h2>
 
@@ -21,7 +21,7 @@
 
 <pre><code class="html">&lt;script src=&quot;jquery.jfImgToCSS.js&quot;&gt;&lt;/script&gt;
 </code></pre></li>
-<li><p>Init the plugin by attaching it the elements you want responsible for launching external files.
+<li><p>Init the plugin by attaching it to the img elements you want to be css background images.
 <code>js
 $(&quot;.imgToCSS&quot;).jfImgToCSS();
 </code></p></li>
@@ -34,15 +34,15 @@ $(&quot;.imgToCSS&quot;).jfImgToCSS();
 <h4 id="basics">Basics</h4>
 
 <ul>
-<li>auto:__ <em>&#8216;false&#8217;</em> If you&#8217;d prefer to set your own background css properites via traditional methods set this to true.</li>
+<li><strong>auto:</strong> <em>&#8216;false&#8217;</em> If you&#8217;d prefer to set your own background css properites via traditional methods set this to true.</li>
 <li><strong>target:</strong> <em>The img element&#8217;s parent</em> This can be changed to another element.</li>
-<li><strong>bgRepeat:</strong> * &#8216;no-repeat&#8217;*</li>
-<li><strong>bgSize:</strong> * &#8216;cover&#8217;*</li>
-<li><strong>bgPosition:</strong> * &#8216;center center&#8217;*</li>
-<li><strong>bgOrigin:</strong> * &#8216;padding-box&#8217;*</li>
-<li><strong>bgClip:</strong> * &#8216;border-box&#8217;*</li>
-<li><strong>bgAttachment:</strong> * &#8216;scroll&#8217;*</li>
-<li><strong>bgColor:</strong> * &#8216;transparent&#8217;*</li>
+<li><strong>bgRepeat:</strong> <em>&#8216;no-repeat&#8217;</em></li>
+<li><strong>bgSize:</strong> <em>&#8216;cover&#8217;</em></li>
+<li><strong>bgPosition:</strong> <em>&#8216;center center&#8217;</em></li>
+<li><strong>bgOrigin:</strong> <em>&#8216;padding-box&#8217;</em></li>
+<li><strong>bgClip:</strong> <em>&#8216;border-box&#8217;</em></li>
+<li><strong>bgAttachment:</strong> <em>&#8216;scroll&#8217;</em></li>
+<li><strong>bgColor:</strong> <em>&#8216;transparent&#8217;</em></li>
 </ul>
 
 <h3 id="optionsasarguments">Options as Arguments</h3>

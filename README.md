@@ -18,7 +18,7 @@ Just follow these steps to enable:
     <script src="jquery.jfImgToCSS.js"></script>
     ```
 
-3. Init the plugin by attaching it the img elements you want to be css background images.
+3. Init the plugin by attaching it to the img elements you want to be css background images.
     ```js
     $(".imgToCSS").jfImgToCSS();
     ```
