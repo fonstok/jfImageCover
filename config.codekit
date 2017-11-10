@@ -42,23 +42,23 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/demo\/jquery.jfImageCover-min.js": {
+	"\/demo\/jquery.jfImgToCSS-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/demo\/jquery.jfImageCover-min.js",
-		"outputAbbreviatedPath": "\/demo\/min\/jquery.jfImageCover-min-min.js",
+		"inputAbbreviatedPath": "\/demo\/jquery.jfImgToCSS-min.js",
+		"outputAbbreviatedPath": "\/demo\/min\/jquery.jfImgToCSS-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/jquery.jfImageCover.js": {
+	"\/jquery.jfImgToCSS.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/jquery.jfImageCover.js",
-		"outputAbbreviatedPath": "\/demo\/jquery.jfImageCover-min.js",
+		"inputAbbreviatedPath": "\/jquery.jfImgToCSS.js",
+		"outputAbbreviatedPath": "\/demo\/jquery.jfImgToCSS-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
@@ -93,7 +93,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "jfImageCover",
+	"displayValue": "jfImgToCSS",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "globe_yellow"
 	},

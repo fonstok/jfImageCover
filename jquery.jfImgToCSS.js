@@ -1,5 +1,5 @@
 (function($) {
-    $.jfImageCover = function(element, options) {
+    $.jfImgToCSS = function(element, options) {
         var plugin = this;
         var $element = $(element);
         var dataatts = $element.data();
@@ -35,17 +35,17 @@
         };
 
         plugin.destroy = function() {
-            $element.removeData('jfImageCover', plugin);
+            $element.removeData('jfImgToCSS', plugin);
             plugin = null;
         };
         plugin.init();
     };
 
-    $.fn.jfImageCover = function(options) {
+    $.fn.jfImgToCSS = function(options) {
         return this.each(function() {
-            if (undefined === $(this).data('jfImageCover')) {
-                var plugin = new $.jfImageCover(this, options);
-                $(this).data('jfImageCover', plugin);
+            if (undefined === $(this).data('jfImgToCSS')) {
+                var plugin = new $.jfImgToCSS(this, options);
+                $(this).data('jfImgToCSS', plugin);
             }
         });
     };

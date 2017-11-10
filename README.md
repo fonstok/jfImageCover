@@ -1,4 +1,4 @@
-# jfImageCover
+# jfImgToCSS
 jQuery plugin designed to reload img tags as css background images on their parents. This enables the handy css features such as full blead images using the cover property while maintaining the img as content, with alt attributes, etc. for search and ease of development. 
 
 
@@ -12,15 +12,15 @@ Just follow these steps to enable:
     <script src="http://code.jquery.com/jquery.min.js"></script>
     ```
 
-2. Download and include jfImageCover after jQuery and before its first use.
+2. Download and include jfImgToCSS after jQuery and before its first use.
 
     ```html
-    <script src="jquery.jfImageCover.js"></script>
+    <script src="jquery.jfImgToCSS.js"></script>
     ```
 
 3. Init the plugin by attaching it the elements you want responsible for launching external files.
     ```js
-    $(".imgCover").jfImageCover();
+    $(".imgCover").jfImgToCSS();
     ```
     
 ## Options and Defaults
@@ -40,7 +40,7 @@ __Options__ and *Defaults*
 ### Options as Arguments
 Options can be passed as arguments through the init function.
 ```js
-$('.imgCover').jfImageCover({
+$('.imgCover').jfImgToCSS({
     bgRepeat: 'no-repeat',
     bgSize: 'cover',
     bgPosition: 'center center',
@@ -68,8 +68,8 @@ There are a few public functions that can be called at any time after init.
 * __init():__ This initiates the plugin, this gets called automatically. 
 
 ```js
-$(".imgCover").data("jfImageCover").destroy();
-$(".imgCover").data("jfImageCover").init();
+$(".imgCover").data("jfImgToCSS").destroy();
+$(".imgCover").data("jfImgToCSS").init();
 ```
 
 ## Basic syntax
