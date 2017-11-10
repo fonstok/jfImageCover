@@ -3,34 +3,43 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>jfImgToCSS</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <section>
-        <div class="c-zone">
-            <div class="column">
-                <img class="imgToCSS" src="images/bridge.jpg">
+    <a class="gitlink" target="_blank" href="https://github.com/fonstok/jfImgToCSS"> github/fonstok</a>
+    <main>
+        <section>
+            <div class="c-zone">
+                <div class="column">
+                    <img class="imgToCSS" 
+                        src="https://c1.staticflickr.com/1/457/19045630176_dc5bc130c3_b.jpg">
+                        <a href="https://www.flickr.com/photos/namoscato/">namoscato</a>
+                </div>
+
+                <div class="column">
+                    <img class="imgToCSS"  
+                    alt="photo of a jungle" 
+                    src="https://c1.staticflickr.com/9/8151/7118549083_cc328651ab_b.jpg"
+                    data-bg-repeat="repeat" 
+                    data-bg-size="100% auto" 
+                    data-bg-position="center">
+                    <a href="https://www.flickr.com/photos/farrokhi/">Babak Farrokhi</a>
+                </div>
+                
+                <div class="column">
+                    <img class="imgToCSS"
+                        alt="photo of a city"  
+                        src="https://c1.staticflickr.com/9/8105/8546730088_542868da24_b.jpg"
+                        data-auto='false'>
+                        <a href="https://www.flickr.com/photos/cdelmoral">cdelmoral</a>
+                </div>
             </div>
-            <div class="column">
-                <img class="imgToCSS"  
-                alt="photo of a jungle" 
-                src="images/jungle.jpg"
-                data-bg-repeat="repeat" 
-                data-bg-size="100% auto" 
-                data-bg-position="center">
-            </div>
-            <div class="column">
-                <img class="imgToCSS"
-                alt="photo of a city"  
-                src="images/city.jpg"
-                data-auto='false'
-                >
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!-- ========= scripts ========== -->
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="./../jquery.jfImgToCSS-min.js"></script>
