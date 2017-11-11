@@ -6,7 +6,11 @@
 <body>
 <h1 id="jfimgtocss">jfImgToCSS</h1>
 
-<p>jQuery plugin designed to reload img tag sources as css background images on their parents. This enables the handy css features such as full blead images using the cover property while maintaining the img as content with alt attributes etc. for search and ease of development. </p>
+<p>jQuery plugin designed to reload img elements&#8217; source images as CSS background images on their parent elements. This enables handy CSS features such as more responsive full-bleed images using the cover property, while maintaining the img as content with its alt attribute, etc. for search, accessibility, and ease of development. </p>
+
+<h2 id="demo">Demo</h2>
+
+<p><a target="_blank"  href="https://codepen.io/fonstok/pen/WXpJxw">https://codepen.io/fonstok/pen/WXpJxw</a></p>
 
 <h2 id="scriptsetup">Script Set Up</h2>
 
@@ -29,21 +33,20 @@ $(&quot;.imgToCSS&quot;).jfImgToCSS();
 
 <h2 id="optionsanddefaults">Options and Defaults</h2>
 
-<p><strong>Options</strong> and <em>Defaults</em></p>
+<p>The options are all CSS background properties.</p>
 
 <h3 id="theoptions">The Options</h3>
 
-<ul>
-<li><strong>auto:</strong> <em>&#8216;true&#8217;</em> If you&#8217;d prefer to set your own background css properites via traditional methods set this to false.</li>
-<li><strong>target:</strong> <em>The img element&#8217;s parent</em> This can be changed to another element.</li>
-<li><strong>bgRepeat:</strong> <em>&#8216;no-repeat&#8217;</em></li>
-<li><strong>bgSize:</strong> <em>&#8216;cover&#8217;</em></li>
-<li><strong>bgPosition:</strong> <em>&#8216;center center&#8217;</em></li>
-<li><strong>bgOrigin:</strong> <em>&#8216;padding-box&#8217;</em></li>
-<li><strong>bgClip:</strong> <em>&#8216;border-box&#8217;</em></li>
-<li><strong>bgAttachment:</strong> <em>&#8216;scroll&#8217;</em></li>
-<li><strong>bgColor:</strong> <em>&#8216;transparent&#8217;</em></li>
-</ul>
+<p><strong>Options</strong> and <em>Defaults</em>
+* <strong>auto:</strong> <em>&#8216;true&#8217;</em> If you&#8217;d prefer to set your own background css properites via traditional methods set this to false.
+* <strong>target:</strong> <em>The img element&#8217;s parent</em> This can be changed to another element.
+* <strong>bgRepeat:</strong> <em>&#8216;no-repeat&#8217;</em>
+* <strong>bgSize:</strong> <em>&#8216;cover&#8217;</em>
+* <strong>bgPosition:</strong> <em>&#8216;center center&#8217;</em>
+* <strong>bgOrigin:</strong> <em>&#8216;padding-box&#8217;</em>
+* <strong>bgClip:</strong> <em>&#8216;border-box&#8217;</em>
+* <strong>bgAttachment:</strong> <em>&#8216;scroll&#8217;</em>
+* <strong>bgColor:</strong> <em>&#8216;transparent&#8217;</em></p>
 
 <h3 id="optionsasarguments">Options as Arguments</h3>
 
@@ -86,6 +89,7 @@ $(&quot;.imgToCSS&quot;).data(&quot;jfImgToCSS&quot;).init();
 <h2 id="basicsyntax">Basic syntax</h2>
 
 <ul>
+<li>Only works with img elements, so you need to target those.</li>
 <li>Make sure its parent element has some sort of width and/or height or it will collapse.</li>
 </ul>
 
