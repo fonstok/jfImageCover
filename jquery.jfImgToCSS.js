@@ -43,6 +43,38 @@
                     'background-clip': plugin.settings.bgClip,
                     'background-attachment': plugin.settings.bgAttachment,
                     'background-color': plugin.settings.bgColor,
+                    
+                    '-moz-background-repeat': plugin.settings.bgRepeat,
+                    '-moz-background-size': plugin.settings.bgSize,
+                    '-moz-background-position': plugin.settings.bgPosition,
+                    '-moz-background-origin': plugin.settings.bgPosition,
+                    '-moz-background-clip': plugin.settings.bgClip,
+                    '-moz-background-attachment': plugin.settings.bgAttachment,
+                    '-moz-background-color': plugin.settings.bgColor,
+                    
+                    '-webkit-background-repeat': plugin.settings.bgRepeat,
+                    '-webkit-background-size': plugin.settings.bgSize,
+                    '-webkit-background-position': plugin.settings.bgPosition,
+                    '-webkit-background-origin': plugin.settings.bgPosition,
+                    '-webkit-background-clip': plugin.settings.bgClip,
+                    '-webkit-background-attachment': plugin.settings.bgAttachment,
+                    '-webkit-background-color': plugin.settings.bgColor,
+                    
+                    '-ms-background-repeat': plugin.settings.bgRepeat,
+                    '-ms-background-size': plugin.settings.bgSize,
+                    '-ms-background-position': plugin.settings.bgPosition,
+                    '-ms-background-origin': plugin.settings.bgPosition,
+                    '-ms-background-clip': plugin.settings.bgClip,
+                    '-ms-background-attachment': plugin.settings.bgAttachment,
+                    '-ms-background-color': plugin.settings.bgColor,
+
+                    '-o-background-repeat': plugin.settings.bgRepeat,
+                    '-o-background-size': plugin.settings.bgSize,
+                    '-o-background-position': plugin.settings.bgPosition,
+                    '-o-background-origin': plugin.settings.bgPosition,
+                    '-o-background-clip': plugin.settings.bgClip,
+                    '-o-background-attachment': plugin.settings.bgAttachment,
+                    '-o-background-color': plugin.settings.bgColor,
                 });
             }
         };
