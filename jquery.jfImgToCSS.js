@@ -20,7 +20,15 @@
 
         plugin.init = function() {
             plugin.settings = $.extend({}, defaults, options, dataatts);
-            $element.hide();
+            
+            // position off screen for screen readers
+            $element.css({
+                'position':'absolute',
+                'top':'auto',
+                'left':'-1000px',
+                'height':'10px',
+                'width':'10px',
+            });
 
             var $target = $(plugin.settings.target);
             $target.css({
