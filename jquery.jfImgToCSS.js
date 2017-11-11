@@ -25,7 +25,7 @@
             $element.css({
                 'position':'absolute',
                 'top':'auto',
-                'left':'-1000px',
+                'left':'-10000px',
                 'height':'10px',
                 'width':'10px',
             });
