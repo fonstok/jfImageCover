@@ -22,8 +22,12 @@ main {
 }
 a {
 	color:#fff;
-	font-family: sans-serif;
+	font-family: verdana, sans-serif;
+	font-size:10px;
 	text-shadow:1px 1px 10px rgba(0,0,0,.5);
+	position:absolute;
+	bottom:10px;
+	right:20px;
 }
 .c-zone {
 	position: relative;
@@ -55,15 +59,17 @@ section .c-zone {
 	flex-shrink: 1;
 	flex-basis: 0;
 	margin:0px 30px;
+	position:relative;
 }
 
 .column:nth-child(3){
-	/*The background properties only work if auto is set to off in the js*/
+	/*These background properties only work if auto is set to off in the plugin*/
 	background-color: #fff;
 	background-size: 100%;
 	background-position:center;
 	background-repeat: no-repeat;
-	/*The background properties only work if auto is set to off in the js*/
+	background-color:#333;
+	/*These background properties only work if auto is set to off in the plugin*/
 }
 
 @media only screen and (max-width: 959px) {
@@ -86,9 +92,5 @@ section .c-zone {
 	padding:5px 20px;
 	border-radius:10px;
 	text-decoration:none;
+	z-index:1;
 }
-
-
-
-
-
