@@ -1,74 +1,52 @@
-# jfImgToCSS
-jQuery plugin designed to reload img elements' source images as CSS background images on their parent elements. This enables handy CSS features such as more responsive full-bleed images using the cover property, while maintaining the img as content with its alt attribute, etc. for search, accessibility, and ease of development. 
-
-## Demo
-<a target="_blank"  href="https://codepen.io/fonstok/pen/WXpJxw">https://codepen.io/fonstok/pen/WXpJxw</a>
+# Canvas-CSS
+CSS files for Canvas CMS
 
 
-
-
-## Script Set Up
+## Set Up
 Just follow these steps to enable:
 
-1. Include jQuery on your page.
+1. Add a surrounding div element around all the content with the class, dva.
 
     ```html
-    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <div class="dva">
+      content goes here 
+    </div>
     ```
 
-2. Download and include jfImgToCSS after jQuery and before its first use.
-
-    ```html
-    <script src="jquery.jfImgToCSS.js"></script>
-    ```
-
-3. Init the plugin by attaching it to the img elements you want to be css background images.
-    ```js
-    $(".imgToCSS").jfImgToCSS();
-    ```
+2. Make sure all the content is inside this div.
     
 ## Options and Defaults
 
-The options are all CSS background properties.
+
 
 ### The Options
 
-__Options__ and *Defaults*
-* __auto:__ *'true'* If you'd prefer to set your own background css properites via traditional methods set this to false.
-* __target:__ *The img element's parent* This can be changed to another element.
-* __bgRepeat:__ *'no-repeat'*
-* __bgSize:__ *'cover'*
-* __bgPosition:__ *'center center'*
-* __bgOrigin:__ *'padding-box'*
-* __bgClip:__ *'border-box'*
-* __bgAttachment:__ *'scroll'*
-* __bgColor:__ *'transparent'*
-
-
-### Options as Arguments
-Options can be passed as arguments through the init function.
-```js
-$('.imgToCSS').jfImgToCSS({
-    auto:'true',
-    bgRepeat: 'no-repeat',
-    bgSize: 'cover',
-    bgPosition: 'center center',
-    bgOrigin: 'padding-box',
-    bgClip: 'border-box',
-    bgAttachment: 'scroll',
-    bgColor: 'transparent',
-  });
-```
     
-### Options as Data Attributes
+### icons banners
+```html
+<h2 class="icon-h lesson">Lessons</h2>
+<h2 class="icon-h project">Project</h2>
+<h2 class="icon-h quiz">Quiz</h2>
+<h2 class="icon-h post">Post</h2>
+<h2 class="icon-h reply">Reply</h2>
+<h2 class="icon-h respond">Respond</h2>
+<h2 class="icon-h objective">Objectives & Outcomes</h2>
+<h2 class="icon-h task">Task</h2>
+<h2 class="icon-h submit">Submit</h2>
+<h2 class="icon-h requirement">Requirements</h2>
+<h2 class="icon-h assignment">Assignments</h2>
+<h2 class="icon-h reading">Readings</h2>
+```
+### Full Bleed Video
 Options can also be passed through data attributes in the opening of the attached element. __Notice that the data attributes use dashes instead of camel case__.
 ```html
-<img class="imgToCSS" 
-    data-bg-repeat="repeat" 
-    data-bg-size="100% auto" 
-    data-bg-position="center" 
-    alt="photo of a jungle" 
-    src="images/jungle.jpg">
+<div class="video">
+    <iframe 
+    src="https://www.youtube.com/embed/_Mz228aUzq8" 
+    frameborder="0" 
+    allowfullscreen>
+    </iframe>
+</div>
 ```
 
 ## Public functions
@@ -98,5 +76,3 @@ $(".imgToCSS").data("jfImgToCSS").init();
 
 ## Credits
 I used http://stefangabos.ro/jquery/jquery-plugin-boilerplate-revisited/ as a starting point for the plugin.
-
-
