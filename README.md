@@ -1,6 +1,5 @@
 # Canvas-CSS
-CSS files for Canvas CMS
-
+Maryville Design & Visual Art Program's CSS files for Canvas CMS  
 
 ## Set Up
 Just follow these steps to enable:
@@ -15,14 +14,9 @@ Just follow these steps to enable:
 
 2. Make sure all the content is inside this div.
     
-## Options and Defaults
-
-
-
-### The Options
-
-    
-### icons banners
+## The Options
+ 
+### Banners
 ```html
 <h2 class="icon-h lesson">Lessons</h2>
 <h2 class="icon-h project">Project</h2>
@@ -49,30 +43,3 @@ Options can also be passed through data attributes in the opening of the attache
 </div>
 ```
 
-## Public functions
-There are a few public functions that can be called at any time after init.
-* __destroy():__ This deactivates the plugin.
-* __init():__ This initiates the plugin, this gets called automatically. 
-
-```js
-$(".imgToCSS").data("jfImgToCSS").destroy();
-$(".imgToCSS").data("jfImgToCSS").init();
-```
-
-## Basic syntax
-* Only works with img elements, so you need to target those.
-* Make sure its parent element has some sort of width and/or height or it will collapse.
-
-```html
-<div class="column">
-    <img class="imgToCSS" 
-    data-bg-repeat="repeat" 
-    data-bg-size="100% auto" 
-    data-bg-position="center" 
-    alt="photo of a jungle" 
-    src="images/jungle.jpg">
-</div>
-```
-
-## Credits
-I used http://stefangabos.ro/jquery/jquery-plugin-boilerplate-revisited/ as a starting point for the plugin.
